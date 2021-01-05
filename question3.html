@@ -18,12 +18,25 @@
         اللي إنت اتابعها Animeتحتوي على مسلسلات ال myAnime المصفوفة الأولى
         اللي رفيجك يتابعها Animeتحتوي على مسلسلات ال myFriendAnime المصفوفة الثانية
       */
+     let myAnime =['star wars tlj','star trel itd','spy','p&p'];
+     let myFriendAnime=['Mulan','miss doubtifir','star wars tlj','harry potter'];
+
 
       // 2
       // mutualAnime عرف مصفوفة فاضية سمها
-
+let mutualAnime =[];
       // mutualAnimeقارن المصفوفتين وضيف المسلسلات المشتركة ل
-
+for (let index = 0; index < myAnime.length; index++) {
+  const element1 = myAnime[index];
+  for (let i = 0; i < myFriendAnime.length; i++) {
+    const element0 = myFriendAnime[i];
+    if(myAnime[i]===myFriendAnime[index]){
+      mutualAnime.push(myAnime[i])
+    }
+  }
+ 
+  
+}
       // consoleفي ال mutualAnime اطبع
 
       // ودك تشوف اللستة المشتركة بينكم على الموقع؟
